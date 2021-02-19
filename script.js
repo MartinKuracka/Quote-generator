@@ -53,7 +53,7 @@ const facebookQuotePlacer = () => {
     FB.ui({      
       display: 'popup',
       method: 'share',
-      quote: ${quoteText} - ${authorText},
+      quote: quoteText + ' - ' + authorText,
       href: 'https://martinkuracka.github.io/Quote-generator/',
     }, function(response){});    
   }
