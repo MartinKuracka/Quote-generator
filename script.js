@@ -54,7 +54,7 @@ const facebookQuotePlacer = () => {
       display: 'popup',
       method: 'share',
       quote: 'say this',
-    //   href: ${quoteText} - ,
+      href: ${quoteText},
     }, function(response){});    
   }
 
