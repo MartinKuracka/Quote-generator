@@ -50,11 +50,11 @@ async function getQuoteFromApi() {
 }
 
 const facebookQuotePlacer = () => {
-    console.log('shared');
     FB.ui({      
       display: 'popup',
       method: 'share',
-      href: 'https://developers.facebook.com/docs/',
+      quote: 'say this',
+    //   href: ${quoteText} - ,
     }, function(response){});    
   }
 
