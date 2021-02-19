@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote generator</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <div class="quote-container" id="quote-container">
+        <!-- Quote element -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+            
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="facebook-button" id="facebook" title='Post to Facebook!'>
+                <i class="fab fa-facebook"></i>
+            </button>
+            <button id="new-quote" onclick=>New quote</button>
+        </div>
+    </div> 
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        
+    </div>
+    <!-- Script -->
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '1784725525023000',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
