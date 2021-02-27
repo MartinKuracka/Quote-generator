@@ -125,3 +125,15 @@ button:active {
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width:500px) {
+  .button-container {
+    display: block;
+    flex-direction: column;
+  }
+
+  button {
+    width: 50vw;
+    margin: 10px;
+  }
+}
