@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>   
+<body>
     <div class="quote-container" id="quote-container">
         <!-- Quote element -->
         <div class="quote-text">
             <i class="fas fa-quote-left"></i>
             <span id="quote"></span>
-            
+
         </div>
         <!-- Author -->
         <div class="quote-author">
@@ -25,13 +25,15 @@
             <button class="facebook-button" id="facebook" title='Post to Facebook!'>
                 <i class="fab fa-facebook"></i>
             </button>
-            <button class='button-text' id="new-quote" onclick=>New quote</button>
+            <button class='button-text' id="tell-button" >Say Out Loud</button>
+            <button class='button-text' id="new-quote" >New quote</button>
         </div>
-    </div> 
+        <audio id="audio" hidden controls></audio>
+    </div>
 
     <!-- Loader -->
     <div class="loader" id="loader">
-        
+
     </div>
     <!-- Script -->
     <script>
@@ -44,8 +46,11 @@
           });
         };
       </script>
+      
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script src="http://connect.facebook.net/en_US/all.js"></script>
-    <script src="script.js"></script>    
+    <script src="https://unpkg.com/sv443-joke-api@0.0.8/web/index.js"></script>
+    <script src="voice.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
