@@ -9,34 +9,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="quote-container" id="quote-container">
-        <!-- Quote element -->
-        <div class="quote-text">
-            <i class="fas fa-quote-left"></i>
-            <span id="quote"></span>
-
-        </div>
-        <!-- Author -->
-        <div class="quote-author">
-            <span class='author-text' id="author"></span>
-        </div>
-        <!-- Buttons -->
-        <div class="button-container">
-            <button class="facebook-button" id="facebook" title='Post to Facebook!'>
-                <i class="fab fa-facebook"></i>
-            </button>
-            <div>
-                <button class='button-text' id="tell-button" >Say Out Loud</button>
-                <button class='button-text' id="new-quote" >New quote</button>
+    <section>
+        <div class="quote-container" id="quote-container">
+            <!-- Quote element -->
+            <div class="quote-text">
+                <i class="fas fa-quote-left"></i>
+                <span id="quote"></span>
+    
             </div>
-
+            <!-- Author -->
+            <div class="quote-author">
+                <span class='author-text' id="author"></span>
+            </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <button class="facebook-button" id="facebook" title='Post to Facebook!'>
+                    <i class="fab fa-facebook"></i>
+                </button>
+                <div>
+                    <button class='button-text' id="tell-button" >Say Out Loud</button>
+                    <button class='button-text' id="new-quote" >New quote</button>
+                </div>
+    
+            </div>
+            <audio id="audio" hidden controls></audio>
         </div>
-        <audio id="audio" hidden controls></audio>
-    </div>
+    </section>
+    
 
     <!-- Loader -->
     <div class="loader" id="loader">
 
+    </div>
+
+     <!-- footer -->
+    <div class="footer">
+        <img src="logo_footer_black.png" alt="" class="f-img">
+        <h3 class="f-text">Creative design by WebMark © 2021</h3>
     </div>
     <!-- Script -->
     <script>
